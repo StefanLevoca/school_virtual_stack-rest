@@ -41,7 +41,7 @@ public class PermissionsController {
 
 
 	@RequestMapping(value = "/permissions/{id}", method = RequestMethod.PUT)
-	public void updateClassroom(@PathVariable long id, @RequestBody List<String> list) throws DaoException {
+	public void updatePermission(@PathVariable long id, @RequestBody List<String> list) throws DaoException {
 		try {
 			permissionDAO.update(id, list);
 		} catch (Exception e) {
@@ -50,7 +50,7 @@ public class PermissionsController {
 	}
 
 	@RequestMapping(value = "/permissions/{id}", method = RequestMethod.DELETE)
-	public void deleteParticipant(@PathVariable long id, @RequestBody String permission)
+	public void deletePermission(@PathVariable long id, @RequestBody String permission)
 			throws PermissionNotFoundException {
 		permissionDAO.delete(id, permission);
 	}
