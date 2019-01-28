@@ -45,12 +45,11 @@ public class ComputerController {
 		return computer;
 	}
 	
-	@RequestMapping(value = "/computers", method = RequestMethod.PUT)
-	public void saveComputer(@RequestBody Computer computer) throws DaoException {
-		try {
-			computerDAO.saveComputer(computer);
-		} catch (Exception e) {
-			throw new DaoException(e);
-		}
-	}
+	//neimplementovane
+	/*
+	 * @RequestMapping(value = "/computers", method = RequestMethod.PUT) public void
+	 * saveComputer(@RequestBody Computer computer) throws DaoException { try {
+	 * computerDAO.saveComputer(computer); } catch (Exception e) { throw new
+	 * DaoException(e); } }
+	 */
 }

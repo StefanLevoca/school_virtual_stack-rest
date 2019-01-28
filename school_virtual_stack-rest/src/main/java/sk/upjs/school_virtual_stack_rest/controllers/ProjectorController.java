@@ -45,12 +45,11 @@ public class ProjectorController {
 		return projector;
 	}
 
-	@RequestMapping(value = "/projectors", method = RequestMethod.PUT)
-	public void saveProjector(@RequestBody Projector projector) throws DaoException {
-		try {
-			projectorDAO.saveProjector(projector);
-		} catch (Exception e) {
-			throw new DaoException(e);
-		}
-	}
+	//neimplementovane
+	/*
+	 * @RequestMapping(value = "/projectors", method = RequestMethod.PUT) public
+	 * void saveProjector(@RequestBody Projector projector) throws DaoException {
+	 * try { projectorDAO.saveProjector(projector); } catch (Exception e) { throw
+	 * new DaoException(e); } }
+	 */
 }
