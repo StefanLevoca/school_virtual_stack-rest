@@ -23,11 +23,14 @@
 	</parent>
 
 	<dependencies>
+
+		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- school_virtual_stack -->
 		<dependency>
 			<groupId>paz1c_projekt</groupId>
 			<artifactId>school_virtual_stack</artifactId>
