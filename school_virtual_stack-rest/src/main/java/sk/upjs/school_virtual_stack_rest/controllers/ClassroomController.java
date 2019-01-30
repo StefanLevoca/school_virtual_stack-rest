@@ -18,7 +18,7 @@ import sk.upjs.school_virtual_stack_rest.exceptions.DaoException;
 @CrossOrigin
 @RestController
 public class ClassroomController {
-
+//toto
 	private ClassroomDAO classroomDao = DAOFactory.INSTANCE.getClassroomDAO();
 
 	@RequestMapping(value = "/classrooms", method = RequestMethod.POST)
@@ -45,14 +45,13 @@ public class ClassroomController {
 		return classroom;
 	}
 
-	@RequestMapping(value = "/classrooms/{newName}", method = RequestMethod.PUT)
-	public void updateClassroom(@PathVariable String newName, @RequestBody Classroom classroom) throws DaoException {
-		try {
-			classroomDao.update(classroom, newName);
-		} catch (Exception e) {
-			throw new DaoException(e);
-		}
-	}
+	/*
+	 * @RequestMapping(value = "/classrooms/{newName}", method = RequestMethod.PUT)
+	 * public void updateClassroom(@PathVariable String newName, @RequestBody
+	 * Classroom classroom) throws DaoException { try {
+	 * classroomDao.update(classroom, newName); } catch (Exception e) { throw new
+	 * DaoException(e); } }
+	 */
 
 	@RequestMapping(value = "/classrooms", method = RequestMethod.DELETE)
 	public void deleteClassroom(@RequestBody Classroom classroom) throws ClassroomNotFoundException {

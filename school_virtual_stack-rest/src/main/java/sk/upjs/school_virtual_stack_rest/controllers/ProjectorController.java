@@ -18,7 +18,7 @@ import sk.upjs.school_virtual_stack_rest.exceptions.ProjectorNotFoundException;
 @CrossOrigin
 @RestController
 public class ProjectorController {
-
+//toto
 	private ProjectorDAO projectorDAO = DAOFactory.INSTANCE.getProjectorDAO();
 
 	@RequestMapping(value = "/projectors", method = RequestMethod.POST)

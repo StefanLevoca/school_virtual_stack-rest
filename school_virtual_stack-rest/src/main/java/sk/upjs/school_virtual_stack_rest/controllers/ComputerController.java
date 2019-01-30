@@ -18,7 +18,7 @@ import sk.upjs.school_virtual_stack_rest.exceptions.DaoException;
 @CrossOrigin
 @RestController
 public class ComputerController {
-	
+	//toto
 	private ComputerDAO computerDAO = DAOFactory.INSTANCE.getComputerDAO();
 
 	@RequestMapping(value = "/computers", method = RequestMethod.POST)
